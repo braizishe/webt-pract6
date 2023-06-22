@@ -1,0 +1,10 @@
+table,
+td {
+    border: 1px solid #ff9b9b;
+}
+
+thead,
+tfoot {
+    background-color: #dddddd;
+    color: #ff6e6e;
+}

@@ -1,0 +1,12 @@
+table,
+td {
+    font-family: Arial, sans-serif;
+    border: 1px solid #fc9bff;
+}
+
+thead,
+tfoot {
+    font-family: Arial, sans-serif;
+    background-color: #dddddd;
+    color: #ff6e6e;
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form name="form1">
+
+  <thead>
+    <tr>
+        <th colspan="3">Введіть два числа для обчислення їхньої суми</th>
+    </tr>
+    </thead>
+
+  <tbody>   
+  <table>
+  <tbody>
+  <br><br>
+  <tr>
+  <td><label for="num1">Число 1:</label></td>
+  <td><input type="number" id="num1"></td>
+  </tr>
+
+  <tr>
+  <td><label for="num2">Число 2:</label></td>
+  <td><input type="number" id="num2"></td>
+  </tr>
+
+  <tr>
+  <td><label for="result">Результат:</label></td>
+  <td><input type="text" id="result" readonly></td>
+  </tr>
+
+  <tr>
+    <td><button type="button" onclick="calculateSum(); displayAnswer(calculateSum())">Обчислити суму</button> </td>
+  </tr>
+
+</form>
+</body>
+</tbody>
+</table>
+
+<script>
+  function calculateSum() {
+    var num1 = parseInt(document.getElementById('num1').value);
+    var num2 = parseInt(document.getElementById('num2').value);
+    var sum = num1 + num2;
+    document.getElementById('result').value = sum;
+  }
+</script>
+
+</html>
